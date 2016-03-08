@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menuItemAbout" android:title="@string/AboutMenuItem" android:icon="@drawable/ic_menu_info_details"></item>
+    <item android:id="@+id/menuItemSettings" android:title="@string/ChangePreferences" android:icon="@drawable/settings_button"></item>
+    <item android:id="@+id/menuItemNewRental" android:title="@string/RentedNewMovie" android:icon="@drawable/rental_button"></item>
+    
+
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="ScrapeInfoShortBlurb"><![CDATA[<html><body style=\'color: white; background-color: #424242;\'>
+            <div style=\'font-size: x-large;\'>
+            <center><h3>Please read this one-time usage note!</h3></center>
+            Remember the Redbox! can automatically connect to Redbox.com to download movies that you have rented.<br /><br />
+            To set up Redbox Automatic Update, please touch the button at the bottom of the \'My Rentals\' screen.<br /><br />
+            If you don\'t want to use Redbox Automatic Update, you can still enter movies manually by touching the \'New Rental\' button at the top of the screen.<br /><br />
+            Thanks!
+            </div>  
+            </body></html>]]>
+        </string>
+        
+        <string name="AboutScreenHTML"><![CDATA[<html><body style=\'color: black; background-color: white;\'>
+            <div style=\'font-size: x-large\'>
+            <h2>Remember the Redbox! version {{version}}</h2>
+            Copyright &copy; 2012 by Speki Software, LLC<br /><br />
+            Contact us at<br />
+            <ul><li>Email: <a href=\'mailto:support@spekisoftware.com\'>support@spekisoftware.com</a></li>
+            <li>Website: <a href=\'http://www.spekisoftware.com\'>www.spekisoftware.com</a></li>
+            </ul>
+            </div>
+            </body></html>]]></string>
+        
+</resources>

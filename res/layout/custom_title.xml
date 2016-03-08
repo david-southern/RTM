@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    
+    <ImageView
+        android:id="@+id/CustomTitleFig0"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:contentDescription="@string/TitleImage"
+        android:src="@drawable/figure_01" />
+ 
+    <ImageView
+        android:id="@+id/CustomTitleFig1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:contentDescription="@string/TitleImage"
+        android:src="@drawable/figure_01" />
+
+    <ImageView
+        android:id="@+id/BannerImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/TitleImage"
+        android:src="@drawable/custom_title_image_480"
+        />
+ 
+    <ImageView
+        android:id="@+id/CustomTitleFig2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:contentDescription="@string/TitleImage"
+        android:src="@drawable/figure_01" />
+ 
+</RelativeLayout>

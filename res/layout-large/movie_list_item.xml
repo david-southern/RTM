@@ -1,0 +1,83 @@
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="82dip"
+     android:orientation="vertical"
+     android:layout_marginBottom="2dp" 
+     >
+
+     <!--
+     <ImageView
+         android:id="@+id/movieExpanderIcon"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:contentDescription="@+id/expanderIconContentDesc"
+         android:src="@drawable/expander_ic_minimized" />
+     -->
+
+     <Button
+         android:id="@+id/MovieReturnedButton"
+         android:layout_width="105dip"
+         android:layout_height="52dip"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_marginTop="15dp"
+         android:text="@string/Returned"
+         android:textSize="16sp" />
+
+     <TextView
+         android:id="@+id/movieTitleText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="65dip"
+         android:layout_marginTop="7dip"
+         android:layout_toLeftOf="@id/MovieReturnedButton"
+         android:textSize="16sp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/rentalDateText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/movieTitleText"
+         android:layout_marginLeft="65dip"
+         android:layout_toLeftOf="@id/MovieReturnedButton"
+         android:textSize="12sp" />
+
+     <TextView
+         android:id="@+id/rentalAgeText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/rentalDateText"
+         android:layout_marginLeft="65dip"
+         android:layout_toLeftOf="@id/MovieReturnedButton"
+         android:textSize="12sp" />
+
+     <ImageView
+         android:id="@+id/movieImage"
+         android:layout_width="52dip"
+         android:layout_height="78dip"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="0dip"
+         android:layout_marginLeft="0dp"
+         android:contentDescription="@string/MovieImage"
+         android:src="@drawable/movie_icon" />
+
+     <ImageView
+         android:id="@+id/ReturnedStamp"
+         android:layout_width="wrap_content"
+         android:layout_height="70dip"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:paddingRight="60dip"
+         android:contentDescription="@string/Returned"
+         android:src="@drawable/returned_stamp" />
+
+ </RelativeLayout>

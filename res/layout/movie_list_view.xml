@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/TitlePlaceholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TitlePlaceholder"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/newRentalButton"
+            android:layout_width="0dp"
+            android:layout_height="52dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/rental_button"
+            android:text="@string/RentedNewMovie"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/changePrefsButton"
+            android:layout_width="0dp"
+            android:layout_height="52dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/settings_button"
+            android:text="@string/ChangePreferences"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/MovieListLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/custom_label_background_color"
+        android:paddingBottom="3dip"
+        android:paddingLeft="7dip"
+        android:paddingTop="3dip"
+        android:text="@string/MyRentals"
+        android:textAppearance="@style/MovieListTitle" />
+
+    <ListView
+        android:id="@+id/movieListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/MovieListLabel" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/emptyList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/movieListView"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/NoMoviesMessage1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/NoMoviesMessage2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/gotoRedboxButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/GetMoviesButtonLabel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/UpdateStatusLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/custom_label_background_color"
+        android:orientation="vertical"
+        android:paddingBottom="3dip"
+        android:paddingLeft="7dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/RedboxUpdateStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text=""
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:id="@+id/updateButtonsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/UpdateLoginInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:textSize="10sp" 
+                android:text="@string/UpdateLoginInfo" 
+                />
+            
+            <Button
+                android:id="@+id/UpdateStatusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:textSize="10sp" 
+                android:text="@string/UpdateStatusNow" 
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remember the Redbox!</string>
+    <string name="RentedNewMovie">New Rental</string>
+    <string name="ChangePreferences">Settings</string>
+    <string name="NoMoviesMessage1">You don\'t have any rentals out.</string>
+    <string name="NoMoviesMessage2">Click the button below to find a movie.</string>
+    <string name="NoMovieSuggestions">No movie suggestions found</string>
+    <string name="ErrorGettingMovieSuggestions">Error loading suggestions</string>
+    <string name="GetMoviesButtonLabel">Find a movie at Redbox.com</string>
+    <string name="Yesterday">Yesterday</string>
+    <string name="Today">Today</string>
+    <string name="DaysAgo">days old</string>
+    <string name="DayAgo">day old</string>
+    <string name="NewRentalLabel">Hey, I just rented a new movie&#8230;</string>
+    <string name="RentItButton">Remind me!</string>
+    <string name="NeverMindButton">Never mind&#8230;</string>
+    <string name="MovieName">Movie Name</string>
+    <string name="NotifyPeriodLabel">Warn me when a rental is older than:</string>
+    <string name="InvalidRedboxUsername">That username is invalid.  Redbox.com usernames must be email addresses.</string>
+    <string name="NeedBothCreds">You must supply both a username and a password to set up automatic updating.
+        Or you can clear both username and password if you want to turn off automatic updating.</string>    
+    <string-array name="NotificationPeriodItems">
+        <item >1 Day</item>
+        <item >2 Days</item>
+        <item >3 Days</item>
+        <item >4 Days</item>
+        <item >5 Days</item>
+        <item >6 Days</item>
+        <item >7 Days</item>
+    </string-array>
+        <string name="NotificationTimeLabel">Warn me every day at:</string>
+        <string name="Ok">Ok</string>
+        <string name="Returned">Returned</string>
+        <string name="Undo">Undo</string>
+        <string name="RedboxUsername">Redbox.com Username</string>
+        <string name="RedboxPassword">Redbox.com Password</string>
+        <string name="ScrapeInfoTitle">Automatic Redbox Update</string>
+        <string name="ScrapeInfoShortBlurb"><![CDATA[<html><body style=\'color: white; background-color: #424242;\'>
+            <div style=\'font-size: smaller;\'>
+            <center><h4>Please read this one-time usage note!</h4></center>
+            Remember the Redbox! can automatically connect to Redbox.com to download movies that you have rented.<br /><br />
+            To set up Redbox Automatic Update, please touch the button at the bottom of the \'My Rentals\' screen.<br /><br />
+            If you don\'t want to use Redbox Automatic Update, you can still enter movies manually by touching the \'New Rental\' button at the top of the screen.<br /><br />
+            Thanks!
+            </div>  
+            </body></html>]]>
+        </string>        
+        <string name="ScrapeInfoOkButton">Ok</string>        
+        <string name="ScrapeInfoText"><![CDATA[<html><body style=\'color: white; background-color: #424242;\'>
+            Remember the Redbox! can automatically connect to Redbox.com to download movies that you have rented.<br/>  
+            In order for this to work, you must:
+            <ul>
+                <li>Sign up for a Redbox.com account (or already have an account)</li>
+                <li>Make sure that the credit cards that you use to rent movies are listed on your Redbox.com account</li>
+                <li>Enter your Redbox.com username and password on this screen</li>
+            </ul>
+            Once you have done this, whenever you rent a Redbox movie with a registered credit card, the Redbox.com website
+            will update your transation history, usually within a few hours of your rental.<br/><br/>Remember the Redbox! will connect to
+            Redbox.com once per day and see if you have any movies newly rented or returned.  If your Redbox.com transaction
+            history has changed then we will automatically adjust your rented movies list.<br/><br/>
+            If you always use the credit cards you added to your Redbox.com account to rent movies, 
+            you will get reminders without ever having to enter a movie manually.
+            </body></html>]]></string>
+        <string name="MovieImage">Movie Image</string>
+        <string name="TitleImage">Title Image</string>
+        <string name="MyRentals">My Rentals</string>
+        <string name="AlertProperties">Alert Properties</string>
+        <string name="LoginInfo">Redbox.com Login Info</string>
+        <string name="AutoScrapeMessage">Remember the Redbox! can automatically update your movie list from your Redbox.com account.</string>
+        <string name="AutoScrapePending">Redbox.com automatic update is pending.</string>
+        <string name="UpdateStatusNow">Check Redbox status</string>        
+        <string name="UpdateLoginInfo">Update Redbox login</string>
+        <string name="SetupLoginInfo">Set up Redbox.com login information</string>
+        <string name="SetItUp">Set up Redbox\nAutomatic Update</string>
+        <string name="WhatsThisThen">What does this mean?</string>
+        <string name="LoadingMovieSuggestions">Loading movie suggestions&#8230;</string>
+        <string name="AboutMenuItem">About</string>
+        <string name="AboutScreenTitle">About Remember the Redbox!</string>
+        <string name="AboutScreenHTML"><![CDATA[<html><body style=\'color: black; background-color: white;\'>
+            <div style=\'font-size: small\'>
+            <h4>Remember the Redbox! {{version}}</h4>
+            Copyright &copy; 2012 by Speki Software, LLC<br /><br />
+            Contact us at<br />
+            <ul><li>Email: <a href=\'mailto:support@spekisoftware.com\'>support@spekisoftware.com</a></li>
+            <li>Website: <a href=\'http://www.spekisoftware.com\'>www.spekisoftware.com</a></li>
+            </ul>
+            </div>
+            </body></html>]]></string>
+            
+        <string name="NotificationMessage">You have overdue Redbox movies!</string>        
+        <string name="NotificationSnoozerTitle">Yikes! Overdue rentals!</string> 
+        <string name="NotificationSnoozerMessage">Touch Dismiss to dismiss this 
+            message, or Snooze to be reminded again later.</string>
+        <string name="NotificationSnoozerOk">Dismiss</string> 
+        <string name="NotificationSnoozerSnooze">Snooze</string> 
+	    <string-array name="NotificationSnoozerItems">
+	        <item >5 Minutes</item>
+	        <item >15 Minutes</item>
+	        <item >30 Minutes</item>
+	        <item >1 Hour</item>
+	        <item >2 Hours</item>
+	        <item >4 Hours</item>
+	        <item >8 Hours</item>
+	        <item >12 Hours</item>
+        </string-array>
+        
+</resources>

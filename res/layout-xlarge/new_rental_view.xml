@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/TitlePlaceholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TitlePlaceholder"
+        android:layout_marginTop="7dip"
+        android:background="@color/custom_label_background_color"
+        android:paddingBottom="3dip"
+        android:paddingLeft="7dip"
+        android:paddingTop="3dip"
+        android:text="@string/NewRentalLabel"
+        android:textAppearance="@style/MovieListTitle"
+        android:textSize="24sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/movieNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="15dip"
+        android:hint="@string/MovieName"
+        android:textSize="24sp" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieNameText"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/rentItButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:text="@string/RentItButton"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/neverMindButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="70dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:text="@string/NeverMindButton"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/autoUpdateGuy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/TitleImage"
+        android:src="@drawable/redbox_signup_guy" />
+
+    <Button
+        android:id="@+id/redboxLoginButton"
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@+id/autoUpdateGuy"
+        android:layout_alignBottom="@+id/autoUpdateGuy"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="26dp"
+        android:text="@string/SetItUp" />
+        
+</RelativeLayout>

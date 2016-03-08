@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/TitlePlaceholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/AlertLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TitlePlaceholder"
+        android:layout_marginTop="3dip"
+        android:background="@color/custom_label_background_color"
+        android:paddingBottom="3dip"
+        android:paddingLeft="7dip"
+        android:paddingTop="3dip"
+        android:text="@string/AlertProperties"
+        android:textAppearance="@style/MovieListTitle" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/AlertLabel"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/NotifyPeriodLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/NotificationPeriodSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/NotificationPeriodSelector"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/NotificationTimeLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp" />
+
+    <TimePicker
+        android:id="@+id/NotificationTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="5dip" />
+
+    <Button
+        android:id="@+id/OkButton"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/NotificationTimePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dip"
+        android:layout_marginRight="70dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/Ok" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<FindBugsFilter>
+     <Match>
+       <Class classname="com.spekisoftware.RTM.ReminderApplication" />
+       <Method name="&lt;init&gt;" />
+       <Bug code="ST" />
+     </Match>
+     
+     <Match>
+       <Class classname="com.spekisoftware.RTM.ImageDownloader" />
+       <Field name="onError" />
+       <Bug code="UwF" />
+     </Match>
+     
+     <Match>
+       <Class classname="com.spekisoftware.RTM.ScrapeAsync$2" />
+       <Method name="handleAction" />
+       <Bug code="UMAC" />
+     </Match>
+     
+     <Match>
+       <Class classname="com.spekisoftware.RTM.RoviAPI$ACResponse" />
+       <Field name="results" />
+       <Bug code="UwF" />
+     </Match>
+ 
+</FindBugsFilter>
